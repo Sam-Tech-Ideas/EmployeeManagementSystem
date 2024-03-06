@@ -1,0 +1,52 @@
+
+
+@model EmployeeManagementSystem.Models.AddEmployeeViewModel
+
+<!-- component -->
+@* <body class="bg-gray-100 min-h-screen flex items-center justify-center "> *@
+
+    <div class="bg-white p-8 rounded shadow-md max-w-md w-full mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">Add Employee</h2>
+
+        <form method="post">
+            <!-- Nom et Prénom -->
+            <div class="grid grid-cols-2 gap-4">
+                <div>
+                    <label for="firstName" class="block text-sm font-medium text-gray-700">Name</label>
+                    <input asp-for="Name" type="text" id="Name" name="firstName" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div>
+                    <label for="lastName" class="block text-sm font-medium text-gray-700">Email</label>
+                    <input type="email" asp-for="Email" id="Email" name="lastName" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+            </div>
+             <div class="grid grid-cols-2 gap-4 my-4">
+                <div>
+                    <label for="firstName" class="block text-sm font-medium text-gray-700">Phone</label>
+                    <input type="text" asp-for="Phone" id="Phone" name="firstName" class="mt-1 p-2 w-full border rounded-md">
+                </div>
+                <div>
+                    <label for="lastName" class="block text-sm font-medium text-gray-700">Salary ($)</label>
+                    <input type="number" asp-for="Salary" id="Salary"  class="mt-1 p-2 w-full border rounded-md">
+                </div>
+            </div>
+
+            <!-- Adresse email -->
+            <div class="mt-4">
+                <label for="email" class="block text-sm font-medium text-gray-700">Position</label>
+                <input type="text" asp-for="Position" id="email" name="email" class="mt-1 p-2 w-full border rounded-md">
+            </div>
+
+            <!-- Mot de passe -->
+           
+
+            <!-- Bouton d'inscription -->
+            <div class="mt-6">
+                <button type="submit" class="w-full p-3 bg-blue-500 text-white rounded-md hover:bg-blue-600">
+                    Save
+                </button>
+            </div>
+        </form>
+    </div>
+
+@* </body> *@
